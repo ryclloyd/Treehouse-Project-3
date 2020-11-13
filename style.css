@@ -84,16 +84,14 @@ button:active {
 	align-items: center;
 }
 
-
 h1 {
 	font-size: 28px;
-	margin-top: -5px;
 	text-shadow: 2px 2px 1px #222;
 }
 
 .fas {
 	font-size: 40px;
-	margin-top: -5px;
+	margin-top: -15px;
 	margin-bottom: 20px;
 	text-shadow: 2px 2px 1px #222;
 }
@@ -122,23 +120,12 @@ h2 {
 	margin-top: 40px;
 }
 
-.contact-container {
-	margin-bottom: -35px;
-}
-
 .contact-flex {
+	list-style: 0;
 	padding: 0;
-    list-style-type: none;
-	margin: 0;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-}
-
-.contact-flex li  {
-	width: 75%;
-	flex-basis: 97%;
-	align-content: space-between;
+	margin-top: -1px;
 }
 
 [class^=form-field] {      /* targets all elements with class of "form-field */
@@ -148,6 +135,7 @@ h2 {
 	font-size: 14px;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	margin-top: 5px;
 }
 
 .form-field:focus,
@@ -161,15 +149,15 @@ textarea:focus {
 	margin-bottom: 12px;
 }
 
-.zip {
-	width: 50%;
+.zip li {
+	width: 75%;
+	display: flex;
 }
 
 label {
 	color: #8d8d8d;
 	font-family: 'Inconsolata', monospace;
 	font-size: 15px;
-	padding-bottom: 3px;
 }
 
 input::placeholder {
@@ -186,7 +174,6 @@ input::placeholder {
     height: 1px;
     background: #606c88;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
-	margin-top: 60px;
 }
 
 .newsletter-container {
@@ -194,14 +181,14 @@ input::placeholder {
 	flex-direction: column;
 } 
 
-.news-type,
+.news-flex,
 .news-format {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.news-type li,
+.news-flex li,
 .news-format li {
 	margin-left: -40px;
 	height: 30px;
@@ -249,13 +236,14 @@ footer {
 	h1 {
 		font-size: 20px;
 		text-shadow: 1px 1px .5px #343434;
+		margin-top: auto;
 	}
 	
 	.fas {
 		font-size: 22px;
 		text-shadow: 1px 1px .5px #343434;
-		margin-bottom: 24px;
-		margin-left: 2px;
+		margin-bottom: 10px;
+		margin-left: 5px;
 	}
 	
 	/* ---- CONTACT ----------------------------------------------- */
@@ -265,24 +253,19 @@ footer {
 	}	
 	
 	.contact-flex {
-		flex-direction: row;
-		
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		flex-direction: column;
 	}
-
-	.contact-flex li {
-		flex-basis: auto;
-		flex-grow: 
-	}
-	 
-	label {
-		display: flex;
-		flex-direction: row;
-	}
-
 	
-	.zip {
-		width: 25%;
+	.contact-flex li {
+
 	}
+	
+	.zip li {
+	width: 75%;
+	display: flex;
+	}	
 		
 	button {
 		margin-top: 30px;
