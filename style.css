@@ -1,0 +1,321 @@
+/* ---- COLORS
+
+Primary = #606c88
+Gradient = #606c88 - #3f4c6b
+Bkgrd = #fcfbf5
+Body text = #8d8d8d
+
+---- */
+
+
+
+/* ==== BASE STYLES ========================== */
+body {
+	font-family: 'Inconsolata', monospace;
+	background-color: #fcfbf5;
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Special Elite', cursive; 
+}
+
+h2 {
+	font-size: 18px;
+}
+
+li {
+	list-style: none;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+} 
+
+form {
+	margin: 0 20px;
+}
+
+input,
+button {              /* ---- Hides browser default :focus border styles - Part 1 ---- */
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+.form-field:focus,     /* ---- Hides browser default :focus border styles - Part 2 ---- */
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+	height: 45px;
+	color: #fcfbf5;
+	background-color: #606c88;
+	border-radius: 5px;	
+	font-family: 'Special Elite', cursive; 
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+button:active {
+	border: solid #96fd3e 1px;
+	color: #96fd3e;
+}
+
+
+/* ==== HEADER STYLES ======================== */
+
+.header-container {
+	background-image: linear-gradient(#606c88,#3f4c6b);
+	color: #fcfbf5;
+	font-family: 'Special Elite', cursive; 
+	height: 100px;
+	margin: 0;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+h1 {
+	font-size: 28px;
+	margin-top: -5px;
+	text-shadow: 2px 2px 1px #222;
+}
+
+.fas {
+	font-size: 40px;
+	margin-top: -5px;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 1px #222;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.header-text {
+	color: #8d8d8d;
+	padding: 0 10px;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+/* ==== FORM STYLES ========================== */
+/* ---- Contact Info  ------------------------------------ */
+.hr-contact {
+	border: 0;
+    height: 1px;
+    background: #606c88;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+	margin-top: 40px;
+}
+
+.contact-container {
+	margin-bottom: -35px;
+}
+
+.contact-flex {
+	padding: 0;
+    list-style-type: none;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.contact-flex li  {
+	width: 75%;
+	flex-basis: 97%;
+	align-content: space-between;
+}
+
+[class^=form-field] {      /* targets all elements with class of "form-field */
+	height: 30px;
+	border: solid #5f5f5f .1px;
+	font-family: 'Inconsolata', monospace;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.form-field:focus,
+textarea:focus {
+	background-image: linear-gradient(to bottom, rgba(150, 253, 62, 0.32), #fff 75%);
+	border: solid #7ed435 1px;
+	border-radius: 5px;
+}
+
+.state {
+	margin-bottom: 12px;
+}
+
+.zip {
+	width: 50%;
+}
+
+label {
+	color: #8d8d8d;
+	font-family: 'Inconsolata', monospace;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+
+input::placeholder {
+	color: darkred;
+	text-align: right;
+	padding-right: 20px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+/* ---- Newsletter -------------------------------------- */
+.hr-news {
+	border: 0;
+    height: 1px;
+    background: #606c88;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+	margin-top: 60px;
+}
+
+.newsletter-container {
+	display: flex;
+	flex-direction: column;
+} 
+
+.news-type,
+.news-format {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.news-type li,
+.news-format li {
+	margin-left: -40px;
+	height: 30px;
+}
+
+.other-topics {
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+textarea {
+	height: 120px;
+	font-family: 'Inconsolata', monospace;
+}
+
+
+/* ==== FOOTER STYLES ======================== */
+footer {
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	font-family: 'Inconsolata', monospace;
+	background-image: linear-gradient(#606c88,#3f4c6b);
+	color: #fcfbf5;
+	font-size: 12px;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* ==== MEDIA QUERIES ======================== */
+
+@media (min-width: 768px) {
+	
+	/* ---- HEADER ----------------------------------------------- */
+	.header-container {
+		flex-direction: row;
+		justify-content: center;
+		height: 40px;
+		padding-bottom: 10px;
+		padding-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	h1 {
+		font-size: 20px;
+		text-shadow: 1px 1px .5px #343434;
+	}
+	
+	.fas {
+		font-size: 22px;
+		text-shadow: 1px 1px .5px #343434;
+		margin-bottom: 24px;
+		margin-left: 2px;
+	}
+	
+	/* ---- CONTACT ----------------------------------------------- */
+
+	form {
+		margin: 0 160px;
+	}	
+	
+	.contact-flex {
+		flex-direction: row;
+		
+	}
+
+	.contact-flex li {
+		flex-basis: auto;
+		flex-grow: 
+	}
+	 
+	label {
+		display: flex;
+		flex-direction: row;
+	}
+
+	
+	.zip {
+		width: 25%;
+	}
+		
+	button {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
