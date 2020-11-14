@@ -55,24 +55,24 @@ button:focus {
 	background-image: linear-gradient(#606c88,#3f4c6b);
 	color: #fcfbf5;
 	font-family: 'Special Elite', cursive; 
-	height: 100px;
+	height: 60px;
 	margin: 0;
 	padding: 30px 0;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
+	border: dotted #fcfbf5 1px
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 26px;
 	text-shadow: 2px 2px 1px #222;
 }
 
 .fas {
 	font-size: 40px;
-	margin-top: -15px;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
+	margin-left: 1px;
 	text-shadow: 2px 2px 1px #222;
 }
       
@@ -86,8 +86,8 @@ h2 {
 }
 
 .sign-heading {
-	font-size: 20px;
-	margin-top: 40px;
+	font-size: 18px;
+	margin-top: 30px;
 }
 
 .sign-up-txt {
@@ -101,7 +101,7 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.hardline-top-1  {
+.line-1  {
 	margin: 0 20px;
 	border: 0; 
 	height: 1px;
@@ -110,7 +110,7 @@ h2 {
 	margin-bottom: 5px;
 }
 
-.hardline-top-2 {
+.line-2 {
 	margin: 0 20px;
 	border: 0; 
 	height: 2px;
@@ -180,7 +180,7 @@ input::placeholder {
 	font-size: 11px;
 }
 
-.hardline-bott {
+.line-3 {
 	margin: 25px 20px;
 	border: 0; 
 	height: 1px;
@@ -200,13 +200,6 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 } 
-
-.news-flex,
-.news-format {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
 
 .news-flex li,
 .news-format li {
@@ -231,7 +224,8 @@ button {
 	background-color: #606c88;
 	border-radius: 5px;	
 	font-family: 'Special Elite', cursive; 
-	font-size: 20px;
+	font-size: 18px;
+	text-align: center;
 	margin-top: 15px;
 }
 
@@ -242,17 +236,14 @@ button:active {
 
 
 /* ==== FOOTER STYLES ======================== */
-footer {
-	display: flex;
-	justify-content: center;
-	height: 40px;
+.footer-text {
 	font-family: 'Inconsolata', monospace;
-	background-image: linear-gradient(#606c88,#3f4c6b);
-	color: #fcfbf5;
-	font-size: 12px;
+	color: #606c88;
+	font-size: 14px;
 	font-weight: 100;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom: 80px;
 }
 
 /* ==== MEDIA QUERIES ======================== */
@@ -282,25 +273,44 @@ footer {
 		margin-left: 5px;
 	}
 	
-	/* ---- CONTACT ----------------------------------------------- */
+	/* ---- FORM----------------------------------------------- */
+	
+	fieldset {
+		margin: 0 120px;
+	}
+	
+	.field {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-	form {
-		margin: 0 160px;
-	}	
-	
-	label {
-		margin-right: 20px;
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="street-address"],
+	input[type="zip"],
+	input[type="password"],
+	select {
+		width: 60%;
 	}
 	
-	.form-field-zip {
-		width: auto;
+	.line-1 {
+		margin: 0;
+
 	}
-		
-	button {
-		margin-top: 30px;
-		margin-bottom: 50px;
+	
+	.line-2 {
+		margin: 0 -25px;
+		margin-top: 5px;
+		margin-bottom: 30px;
 	}
-}
+	
+	.line-3 {
+		margin: 25px -20px;
+	}
 
 
 

@@ -20,38 +20,39 @@
 			<h2 class="sign-heading">Signup for our Newsletter</h2>
 			<p class="sign-up-txt">Get the latest news on how your code is doing right in your inbox</p>
 		</div>
-		<hr class="hardline-top-1">	
-		<hr class="hardline-top-2">	
-		
+
 	<form class="form-flex">
+		
 		<fieldset>
+		<hr class="line-1">	
+		<hr class="line-2">	
 		<legend class=legend-contact>Contact Information</legend>
-			<div class="field-1">
-				<label for="name">Full Name</label>
+			<div class="field">
+				<label for="name" id="">Full Name</label>
 				<input type="text" id="name" name="user-name" placeholder="required" required>
 			</div>
 			
-			<div class="field-2">
+			<div class="field">
 				<label for="email">Email Address</label>
 				<input type="email" id="email" name="user-email"  placeholder="required" required>
 			</div>
-			<div class="field-3">
+			<div class="field">
 				<label for="phone">Phone Number</label>
 				<input type="tel" id="phone" name="user-phone" placeholder="Ex. 555-555-5555">
 			</div>
-			<div class="field-4">
+			<div class="field">
 				<label for="address1">Street Address</label>
 				<input type="text" id="address1" name="user-address1">
 			</div>
-			<div class="field-5">
+			<div class="field">
 				<label for="address2">Address Line 2</label>
 				<input type="text" id="address2" name="user-address2">
 			</div>
-			<div class="field-6">
+			<div class="field">
 				<label for="city">City</label>
 				<input type="text" id="city" name="user-city">
 			</div>
-			<div class="field-7">
+			<div class="field">
 				<label for="state">State</label>
 				<select id="state" name="user-state" required>
 			<option value="" selected="selected">Select State</option>
@@ -108,11 +109,11 @@
 			<option value="WY">Wyoming</option>
 			</select>
 			</div>
-			<div class="field-8">
+			<div class="field">
 				<label for="zip">Zip Code</label>
 				<input type="text" id="zip" name="user-zip"  pattern="[0-9]{5}" placeholder="5-digits">
 			</div>
-			<hr class="hardline-bott">	
+			<hr class="line-3">	
 		</fieldset>
 				
 		<fieldset class="newsletter-flex">
@@ -121,15 +122,15 @@
 				<ul class="news-flex">
 						<li>
 							<input type="checkbox" id="html-news" value="html-news" name="user-newsletter">
-							<label for="html-news" class="box-label">HTML News</label>
+							<label for="html-news">HTML News</label>
 						</li>
 						<li>
 							<input type="checkbox" id="css-news" value="css-news" name="user-newsletter">
-							<label for="css-news" class="box-label">CSS News</label>
+							<label for="css-news">CSS News</label>
 						</li>
 						<li>
 							<input type="checkbox" id="js-news" value="js-news" name="user-newsletter">
-							<label for="js-news" class="box-label">Javascript News</label>
+							<label for="js-news">Javascript News</label>
 						</li>
 				</ul>					
 				<label>Select newsletter format:</label>
@@ -148,9 +149,7 @@
 				<button>Sign Up</button>
 		</fieldset>
 	</form>
-	<footer>
-	    <p class="footer-text">The Code Review &copy; 2020</p>
-	</footer>
+	<div class="footer-text">The Code Review &copy; 2020</div>
 </body>
 </html>
 
