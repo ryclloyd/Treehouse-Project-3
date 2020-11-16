@@ -13,7 +13,7 @@
 	<header>
 		<ul class="header-container">
 			<li class="heading"><h1>The Code Review</h1></li>
-			<i class="fas fa-user-secret" alt="secret agent character"></i>
+			<li><i class="fas fa-user-secret"></i>
 		</ul>
 	</header>
 		<div class="sign-up">
@@ -22,16 +22,15 @@
 		</div>
 
 	<form class="form-flex">
+		<hr class="line-1">	
+		<hr class="line-2">
 		
 		<fieldset>
-		<hr class="line-1">	
-		<hr class="line-2">	
-		<legend class=legend-contact>Contact Information</legend>
+			<legend class=legend-contact>Contact Information</legend>
 			<div class="field">
-				<label for="name" id="">Full Name</label>
+				<label for="name">Full Name</label>
 				<input type="text" id="name" name="user-name" placeholder="required" required>
 			</div>
-			
 			<div class="field">
 				<label for="email">Email Address</label>
 				<input type="email" id="email" name="user-email"  placeholder="required" required>
@@ -111,42 +110,43 @@
 			</div>
 			<div class="field">
 				<label for="zip">Zip Code</label>
-				<input type="text" id="zip" name="user-zip"  pattern="[0-9]{5}" placeholder="5-digits">
+				<input type="text" id="zip" name="user-zip" placeholder="5-digits">
 			</div>
-			<hr class="line-3">	
 		</fieldset>
-				
+
+		<hr class="line-3">	
+
 		<fieldset class="newsletter-flex">
-		<legend class="legend-news">Newsletter</legend>
-			<p>Select the newsletters you would like to receive:</p>
-				<ul class="news-flex">
-						<li>
-							<input type="checkbox" id="html-news" value="html-news" name="user-newsletter">
-							<label for="html-news">HTML News</label>
-						</li>
-						<li>
-							<input type="checkbox" id="css-news" value="css-news" name="user-newsletter">
-							<label for="css-news">CSS News</label>
-						</li>
-						<li>
-							<input type="checkbox" id="js-news" value="js-news" name="user-newsletter">
-							<label for="js-news">Javascript News</label>
-						</li>
-				</ul>					
-				<label>Select newsletter format:</label>
-					<ul class="news-format">
-							<li>
-								<input type="radio" id="html" value="html" name="user-news-format">
-								<label for="html">HTML</label>
-							</li>
-							<li>
-								<input type="radio" id="plain-text" value="plain-text" name="user-news-format">
-								<label for="plain-text">Plain text</label>
-							</li>
-					</ul>
-				<label for="other-topics" class="other-topics">Other topics you'd like to hear about?</label>
-					<textarea id="other-topics" name="user-topics"></textarea>
-				<button>Sign Up</button>
+			<legend class="legend-news">Newsletter</legend>
+			<p class="newsletter-txt">Select the newsletters you would like to receive:</p>
+			<ul class="news-flex">
+				<li>
+					<input type="checkbox" id="html-news" value="html-news" name="user-newsletter">
+					<label for="html-news">HTML News</label>
+				</li>
+				<li>
+					<input type="checkbox" id="css-news" value="css-news" name="user-newsletter">
+					<label for="css-news">CSS News</label>
+				</li>
+				<li>
+					<input type="checkbox" id="js-news" value="js-news" name="user-newsletter">
+					<label for="js-news">Javascript News</label>
+				</li>
+			</ul>					
+			<label>Select newsletter format:</label>
+			<ul class="news-format">
+				<li>
+					<input type="radio" id="html" value="html" name="user-news-format">
+					<label for="html">HTML</label>
+				</li>
+				<li>
+					<input type="radio" id="plain-text" value="plain-text" name="user-news-format">
+					<label for="plain-text">Plain text</label>
+				</li>
+			</ul>
+			<label for="other-topics" class="other-topics">Other topics you'd like to hear about?</label>
+			<textarea id="other-topics" name="user-topics"></textarea>
+			<button>Sign Up</button>
 		</fieldset>
 	</form>
 	<div class="footer-text">The Code Review &copy; 2020</div>
