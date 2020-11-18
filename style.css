@@ -310,8 +310,6 @@ button:active {
 	
 	.field {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -327,12 +325,20 @@ button:active {
 		  margin-right: 2px;
 	}
 	
-	#zip {
-		  width: 120px;
+	.zip {
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 	}
-
-button {
-	  margin-right: 4px;
+	
+	#zip {
+		width: 125px;
+		margin-left: 85px; 
+	}
+	
+	button {
+		margin-right: 4px;
 	  }
 }
 
