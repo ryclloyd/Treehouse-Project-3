@@ -305,40 +305,37 @@ button:active {
 	}
 	
 	  fieldset {
-		margin: 0 120px;
+		margin-right: 125px;
+		margin-left: 120px;
 	}
 	
 	.field {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-	}
-
-	input[type="text"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="street-address"],
-	input[type="zip"],
-	input[type="password"],
-	select {
-		width: 300px;
-		  margin-right: 2px;
+		margin-bottom: 10px;
 	}
 	
-	.zip {
-		display: inline-flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
+	.field input,
+	.field select {
+		margin-bottom: 0;
+		flex-basis: 65%;
+		flex-grow: 1;
+	}
+	
+	.field label {
+	flex-basis: 30%;
+	}
+	
+	#state {
+		margin-bottom: 0;
 	}
 	
 	#zip {
-		width: 125px;
-		margin-left: 85px; 
+		max-width: 30%;
 	}
-	
+
 	button {
-		margin-right: 4px;
+		margin-right: 6px;
 	  }
 }
 
